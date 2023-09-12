@@ -1,9 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <title>Programmiersprachen Einführung</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bft22</title>
+    <style>
+        /* CSS-Styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            text-decoration: none; /* Entfernt die standardmäßige Unterstreichung von Links */
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <p>Dies ist eine kleine Einführung in die neue Programmiersprache.</p>
+    <h1>Button-Demo</h1>
+    <div class="button-container">
+        <a class="button" id="button1" href="https://github.com/BaranAlg" target="_blank">Button 1</a>
+        <a class="button" id="button2" href="https://www.beispiel-website2.de" target="_blank">Button 2</a>
+        <a class="button" id="button3" href="https://www.beispiel-website3.de" target="_blank">Button 3</a>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+        // JavaScript-Funktionalität
+        const button1 = document.getElementById("button1");
+        const button2 = document.getElementById("button2");
+        const button3 = document.getElementById("button3");
+        const output = document.getElementById("output");
+
+        button1.addEventListener("click", () => {
+            output.innerHTML = "Du hast Button 1 geklickt. Du wirst zur ersten Website weitergeleitet.";
+        });
+
+        button2.addEventListener("click", () => {
+            output.innerHTML = "Button 2 wurde geklickt. Du wirst zur zweiten Website weitergeleitet.";
+        });
+
+        button3.addEventListener("click", () => {
+            output.innerHTML = "Button 3 wurde ausgewählt. Du wirst zur dritten Website weitergeleitet.";
+        });
+    </script>
 </body>
 </html>
