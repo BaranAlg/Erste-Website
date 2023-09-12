@@ -1,1 +1,26 @@
+  /* CSS-Styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            text-decoration: none; /* Entfernt die standardmäßige Unterstreichung von Links */
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
