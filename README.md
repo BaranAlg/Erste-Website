@@ -1,1 +1,1 @@
-Hier arbeite ich an meiner eigenen Website 🖥✅️
+Hier arbeite ich an meiner eigenen Website 🖥
